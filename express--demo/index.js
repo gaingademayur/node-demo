@@ -24,7 +24,7 @@ app.get('/api/courses/:id', (req, res) => {
 
 app.post('/api/courses', (req,res) => {
     const course = {
-        id: courses.length+1,
+        id: courses.length+1+0,
         name: req.body.name
     };
     courses.push(course);
